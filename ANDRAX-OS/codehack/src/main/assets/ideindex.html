@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CodeHACK IDE</title>
+  <style type="text/css" media="screen">
+    body {
+        overflow: hidden;
+    }
+    
+    #editor { 
+        margin: 0;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+  </style>
+</head>
+<body>
+<pre id="editor">
+</pre>
+
+<!-- load ace -->
+<script src="src-noconflict/ace.js"></script>
+<!-- load ace language tools -->
+<script src="src-noconflict/ext-language_tools.js"></script>
+<script src="bridge.js" type="text/javascript"></script>
+<script>
+    ace.require("ace/ext/language_tools");
+    var editor = ace.edit("editor");
+    editor.session.setMode("ace/mode/c_cpp");
+    editor.setShowPrintMargin(false);
+    editor.getSession().setUseWrapMode(true);
+    editor.renderer.setAnimatedScroll(true);
+    editor.renderer.setVScrollBarAlwaysVisible(true);
+    editor.renderer.setAnimatedScroll(true);
+    editor.getSession().setUndoSelect(false);
+    var test = editor.setValue(editor.getValue());
+    editor.setTheme("ace/theme/vibrant_ink");
+    //editor.setValue("new code " + code);
+    //enable autocompletion and snippets
+    editor.setOptions({
+        enableBasicAutocompletion: true,
+        enableSnippets: true,
+        enableLiveAutocompletion: true
+    });
+
+    //bridge.bindEditorEventToJava();
+
+    function handleJava(id, editorCommand) {
+        if (!editorCommand.cmd)return;
+        var data = editorCommand.data;
+
+        var result = bridge.execCommand(editorCommand.cmd, editorCommand.data);
+        console.log("cmd="+editorCommand.cmd+" result="+result);
+        //return returnToAndroid(id, result === undefined ? null : result);
+    }
+
+    function returnToAndroid(id, value) {
+        if (id === 0) {
+            return value;
+        }
+        AndroidEditor.returnValue(id, value);
+        return null;
+    }
+</script>
+</body>
+</html>

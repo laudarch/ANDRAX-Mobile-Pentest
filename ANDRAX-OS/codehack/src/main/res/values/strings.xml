@@ -1,0 +1,9 @@
+<resources>
+
+    <string translatable="false" name="fontdefault">12px</string>
+    <string translatable="false" name="fontsizeselected"></string>
+    <string translatable="false" name="newfilename">New file name</string>
+    <string translatable="false" name="cflags">-fPIE -pie -s</string>
+    <string translatable="false" name="navopen">Open NavigationDrawer</string>
+    <string translatable="false" name="navclose">Close NavigationDrawer</string>
+</resources>

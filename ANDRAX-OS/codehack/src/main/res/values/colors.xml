@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#eb0000</color>
+    <color name="colorPrimaryDark">#cc0000</color>
+    <color name="colorAccent">#08ff00</color>
+    <color name="blackfull">#000000</color>
+    <color name="blacklight">#101010</color>
+    <color name="background_material_dark_user">#101010</color>
+    <color name="background_material_dark_1">#101010</color>
+    <color name="background_material_light_1">#000000</color>
+    <color name="whitefull">#ffffff</color>
+    <color name="grennfull">#08ff00</color>
+    <color name="background_material_dark">#111111</color>
+</resources>

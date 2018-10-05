@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textvmp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/imagevmp"
+                    android:gravity="center"
+                    android:text="VMP EVIL AP"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <ImageView
+                    android:id="@+id/imagevmp"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="50dp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/vmp_logo" />
+
+                <EditText
+                    android:id="@+id/ssid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textvmp"
+                    android:layout_marginTop="40dp"
+                    android:hint="ANDRAX-Mobile-Pentest"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/bluedack" />
+
+                <RadioGroup
+                    android:id="@+id/rdgrp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/password">
+
+                    <RadioButton
+                        android:id="@+id/secured"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="WPA-PSK" />
+
+                    <RadioButton
+                        android:id="@+id/open"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Open" />
+                </RadioGroup>
+
+                <Button
+                    android:id="@+id/cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="false"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@id/rdgrp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Clear" />
+
+                <Button
+                    android:id="@+id/start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/cancel"
+                    android:layout_alignEnd="@+id/ssid"
+                    android:layout_alignRight="@+id/ssid"
+                    android:layout_alignTop="@+id/cancel"
+                    android:layout_gravity="right"
+                    android:text="Start" />
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@id/ssid"
+                    android:ems="10"
+                    android:hint="BEACRACKER"
+                    android:inputType="textPassword"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/bluedack" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

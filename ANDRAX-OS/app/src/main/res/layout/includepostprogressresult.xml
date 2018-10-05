@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:background="@android:color/black">
+
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Fuzzer OUTPUT:"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:id="@+id/scrollfuzzerresult02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView28">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textpostresult02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Loading..."
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorAccent" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

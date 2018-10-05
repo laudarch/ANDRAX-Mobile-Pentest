@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="itemlang" translatable="false">
+        <item>ASM</item>
+        <item>C/C++</item>
+        <item>Go</item>
+        <item>Ruby</item>
+        <item>Perl</item>
+        <item>Lua</item>
+        <item>Shell</item>
+        <item>Makefile</item>
+        <item>R</item>
+        <item>Haskell</item>
+        <item>Java</item>
+        <item>PHP</item>
+        <item>Html</item>
+        <item>CSS</item>
+        <item>Javascript</item>
+        <item>Python</item>
+        <item>C#</item>
+    </string-array>
+
+    <string-array name="itemtheme" translatable="false">
+        <item>eclipse</item>
+        <item>textmate</item>
+        <item>xcode</item>
+        <item>cobalt</item>
+        <item>merbivore</item>
+        <item>monokai</item>
+        <item>solarized_dark</item>
+        <item>terminal</item>
+        <item>vibrant_ink</item>
+    </string-array>
+
+</resources>
