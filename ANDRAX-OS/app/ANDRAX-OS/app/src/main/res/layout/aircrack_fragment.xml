@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@drawable/aircrack" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView3"
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:text="AIRCRACK-NG"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:text="Start monitor mode"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:layout_below="@+id/textView2"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView4"
+                android:layout_marginTop="30dp"
+                android:text="Interface:"
+                android:textColor="@color/colorAccent"
+                android:textSize="15sp"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/edititerfaceaircrack"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView5"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="wlan1"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/bluedack" />
+
+            <Switch
+                android:id="@+id/switchaircrack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/edititerfaceaircrack"
+                android:layout_alignParentRight="true"
+                android:layout_alignRight="@+id/edititerfaceaircrack"
+                android:layout_below="@+id/textView5"
+                android:layout_marginRight="10dp"
+                android:text="Enable"
+                android:textColor="@color/colorAccent" />
+
+            <Button
+                android:id="@+id/btnstartairodump"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edititerfaceaircrack"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="38dp"
+                android:text="RUN AIRODUMP-NG"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
